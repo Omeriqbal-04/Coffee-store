@@ -1,0 +1,150 @@
+/* ==========================================
+   1. SECTION & LAYOUT CONTAINERS
+   ========================================== */
+
+.drinks-container {
+  min-height: 100vh;
+  /* Changed from height to min-height so it doesn't clip on smaller screens */
+  width: 100%;
+  background: radial-gradient(#52311c 0%, #29140a 100%);
+  /* Fixed 0% to 100% for a smooth glow */
+  display: flex;
+  flex-direction: column;
+  /* Stacks the header text on top of the menu */
+  align-items: center;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.drinks-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 800px;
+}
+
+/* Fixed the stray '&' symbol for clean Vanilla CSS */
+.drinks-content h2 {
+  color: #e6d5c3;
+  font-size: 2.5rem;
+  font-family: 'Pacifico', cursive;
+  padding-top: 1.2rem;
+  padding-bottom: 1rem;
+}
+
+.drinks-content p {
+  width: 65%;
+  color: #efeeec;
+  font-size: 0.9rem;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+/* ==========================================
+   2. DRINKS MENU GRID / FLEX LAYOUT
+   ========================================== */
+
+.drinks-menu {
+  width: 90%;
+  /* Increased slightly for better breathing room */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  /* Enhanced gap for a cleaner aesthetic */
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+/* ==========================================
+   3. INDIVIDUAL DRINK CARD & CONTENT
+   ========================================== */
+
+.drink-item {
+  width: 325px;
+  height: 450px;
+  background-color: #c9a66b;
+  border-radius: 50px;
+  border: #29140a 2px solid;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  /* Keeps everything cleanly inside the rounded corners */
+}
+
+.box-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* Evenly spaces image, text, and button vertically */
+  height: 100%;
+  padding: 25px 20px;
+}
+
+/* ==========================================
+   4. REUSABLE IMAGE WRAPPERS & IMAGES
+   ========================================== */
+
+/* Consolidated your unique image wrappers into a unified rule */
+.Expresso-image,
+.drink-image2,
+.IcedCoffee-image {
+  height: 180px;
+  /* Unified height so all card images scale identically */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Combined global rules for all images inside the wrappers */
+.Expresso-image img,
+.drink-image2 img,
+.IcedCoffee-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.15));
+  /* Applies the cool soft shadow to all cups */
+}
+
+/* ==========================================
+   5. CARD TYPOGRAPHY & BUTTONS
+   ========================================== */
+
+.drink-item h3 {
+  color: #29140a;
+  font-size: 1.5rem;
+  font-family: 'Playfair Display', 'Georgia', serif;
+  margin: 10px 0 5px 0;
+}
+
+.box-content p {
+  color: #29140a;
+  font-size: 0.9rem;
+  width: 90%;
+  text-align: center;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.order-btn {
+  background-color: #a07048;
+  color: #e6d5c3;
+  padding: 0.8rem 3rem;
+  border: #29140a 1px solid;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* Added a nice hover interaction for the UX button feedback */
+.order-btn:hover {
+  background-color: #865b38;
+  transform: scale(1.03);
+}

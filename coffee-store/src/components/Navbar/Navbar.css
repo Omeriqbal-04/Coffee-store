@@ -1,0 +1,82 @@
+/* Update your Navbar container class with these properties */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  /* Keeps logo on left, links in middle, CTA on right */
+  align-items: center;
+  padding: 1.2rem 8%;
+  background-color: #261205cf;
+  background: radial-gradient(circle at 85% 30%, #52311c 0%, #29140a 70%);
+  box-shadow: 0 10px 30px -5px rgba(176, 145, 93, 0.3),
+    0 5px 15px -3px rgba(46, 33, 11, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  /* Extra touch: Make it lift slightly on hover! */
+  .navbar:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px -5px rgba(176, 145, 93, 0.4.5),
+      0 8px 20px -3px rgba(46, 33, 11, 0.15);
+  }
+}
+
+.logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #a07048;
+}
+
+.logo span {
+  color: #e16d6d;
+  /* Pure white highlight for "Brew" */
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+}
+
+/* Base Style for All Links */
+.nav-links li {
+  font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+  position: relative;
+  padding: 0.6rem 0.8rem;
+  transition: color 0.3s ease;
+  list-style: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+/* Hover State for Inactive Links */
+.nav-links li:hover {
+  background-color: #69492e;
+  color: #ffffff;
+  /* Fades into pure white on hover */
+}
+
+/* Active Link State (Home) */
+.nav-links li.active {
+  background-color: #a07048;
+  color: #ffffff;
+  /* Pure white text */
+  font-weight: 600;
+  /* Slightly crisper weight for the active tab */
+}
+
+/* The Border-Bottom Underline for Active Link */
+.nav-links li.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  /* Thin, elegant indicator line */
+  background-color: #ffffff;
+  /* Matches the active white text */
+  border-radius: 2px;
+}

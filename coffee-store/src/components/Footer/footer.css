@@ -1,0 +1,183 @@
+.FooterArea {
+  height: 32vh;
+  width: 100%;
+  background: radial-gradient(#52311c 0%, #29140a 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =====================================================================================
+                                  FOOTER BOX                                            
+   ====================================================================================*/
+.Footer-Box {
+  height: 30vh;
+  width: 99%;
+  background-color: #c9a66b;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.5),
+    /* Deep smooth drop shadow */
+    inset 0 1px 0px rgba(255, 255, 255, 0.25);
+  /* Subtle inner light rim at the top */
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+/*================================================================================================
+                                         LEAVES IMAGE                                             
+=================================================================================================*/
+
+.Footer-imageBox {
+  height: 30vh;
+  width: 30%;
+}
+
+.Footer-imageBox img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*===================================================================================================
+                                          COLUMN - 1                                                
+====================================================================================================*/
+.column-1 {
+  height: 100%;
+  width: 20%;
+}
+
+.columnContent-1 {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h6 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.Content1 {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  color: rgb(231, 230, 230);
+  text-align: center;
+}
+
+/*=====================================================================================
+                                     COLUMN - 2                                       
+======================================================================================*/
+.column-2 {
+  height: 100%;
+  width: 20%;
+}
+
+.columnContent-2 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Content2 {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  color: rgb(231, 230, 230);
+  text-align: center;
+}
+
+/*==========================================================================================
+                                      COLUMN - 3                                            
+===========================================================================================*/
+.column-3 {
+  height: 80%;
+  width: 25%;
+}
+
+.columnContent-3 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/*==========================================================================================
+                                    SOCIAL MEDIA ICONS                                     
+===========================================================================================*/
+.icon-images {
+  height: 3rem;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.column3-text h3 {
+  font-size: 20px;
+  font-weight: 700;
+  text-shadow: #090402;
+}
+
+.column3-para {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.column3-para p {
+  font-size: 1.3rem;
+  color: rgb(231, 230, 230);
+  text-shadow: #0e0805;
+}
+
+.instalogo {
+  height: 3rem;
+  width: 3rem;
+}
+
+.instalogo img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.facebooklogo {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.facebooklogo img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.twitterlogo {
+  height: 2.7rem;
+  width: 2.7rem;
+}
+
+.twitterlogo img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.gap-line {
+  height: 70%;
+  width: 3px;
+  background-color: #523325;
+}

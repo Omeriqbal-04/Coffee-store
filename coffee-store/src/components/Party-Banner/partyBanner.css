@@ -1,0 +1,172 @@
+/* ==========================================
+   1. BACKGROUND & CONTAINER
+   ========================================== */
+.PartyBanner-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  /* Your exact deep chocolate vignette gradient */
+  background: radial-gradient(#52311c 0%, #29140a 100%);
+}
+
+/* ==========================================
+   2. THE CARD STRUCTURE
+   ========================================== */
+.PartyBanner-card {
+  display: flex;
+  width: 90%;
+  max-width: 1300px;
+  min-height: 80vh;
+  /* Changed from fixed height to min-height to prevent clipping */
+  border-radius: 30px;
+  overflow: hidden;
+  box-sizing: border-box;
+  /* Your exact background gradient */
+  background: linear-gradient(141deg, #2a160e 0%, #3a2217 50%, #513f34 85%, #523724 100%);
+  /* Your exact depth polish shadows */
+  box-shadow:
+    inset 1px 1px 2px rgba(255, 255, 255, 0.08),
+    inset -6px -6px 20px rgba(0, 0, 0, 0.8),
+    0px 25px 60px rgba(0, 0, 0, 0.85);
+}
+
+.PartyBanner-content {
+  display: grid;
+  grid-template-columns: 370px 520px 370px;
+  /* Maintains your 3 equal columns */
+  width: 100%;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.PartyBanner-column1,
+.PartyBanner-column2,
+.PartyBanner-column3 {
+  width: 100%;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  /* Vertically centers the content within the card */
+  box-sizing: border-box;
+}
+
+/* ==========================================
+   3. LEFT COLUMN (COLUMN 1)
+   ========================================== */
+.column1-content {
+  padding: 80px 0px 80px 50px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.column1-heading {
+  font-size: 5rem;
+  line-height: 0.8;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #ffffff;
+}
+
+.straight-line {
+  height: 2px;
+  width: 28%;
+  background-color: #ffffff;
+  margin-top: 2.4rem;
+}
+
+.column1-heading2 {
+  font-size: 1.7rem;
+  color: #ffffff;
+  margin-top: 3rem;
+  font-weight: 400;
+}
+
+.column1-paragraph {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.column1-btn {
+  padding: 0.8rem 2.5rem;
+  background-color: #9b6339;
+  color: #ffffff;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* ==========================================
+   4. MIDDLE COLUMN (THE COFFEE CUP IMAGE FIX)
+   ========================================== */
+.PartyBanner-coffee-cupBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.coffee-cupBox-image {
+  width: 100%;
+  height: auto;
+  /* STOPS the squishing/warping completely */
+  object-fit: cover;
+}
+
+/* ==========================================
+   5. RIGHT COLUMN (COLUMN 3)
+   ========================================== */
+.column3-content {
+  padding: 80px 50px 80px 0px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: right;
+  /* Ensures right alignment like your original design */
+}
+
+.column3-heading {
+  font-size: 3.4rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.column3-straightLine {
+  height: 1.8px;
+  width: 100%;
+  max-width: 17.2rem;
+  background-color: #ffffff;
+  margin: 1rem 0 1.3rem auto;
+  /* Right aligns your straight line */
+}
+
+.column3-location {
+  line-height: 1.8;
+  color: #ffffff;
+}
+
+.address-heading {
+  margin-top: 1.5rem;
+  font-size: 1.6rem;
+  color: #ffffff;
+}
+
+.address-paragraph {
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+.address-btn {
+  padding: 0.8rem 1.5rem;
+  background-color: #9b6339;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
